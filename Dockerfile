@@ -3,7 +3,7 @@ LABEL maintainer="codyzacharias@pm.me"
 
 WORKDIR /root
 
-RUN git clone --depth=1 https://github.com/12knnights/twint.git && \
+RUN git clone --depth=1 -b mine https://github.com/12knnights/twint.git && \
 	cd /root/twint && \
 	pip3 install . -r requirements.txt
 
